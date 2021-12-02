@@ -15,7 +15,7 @@ int main (int argc, char *argv[]) {
     delta = b * b - 4 * a * c;
     printf("%f %f %f",a,b,c);
     x1 = (- b + sqrt(delta)) / (2 * a);
-    x2 = (- b - sqrt(2)) / (2 * a);
+    x2 = (- b - sqrt(delta)) / (2 * a);
     printf("La racine X1 est: %f\n",x1);
     printf("La racine X2 est: %f\n",x2);
 
