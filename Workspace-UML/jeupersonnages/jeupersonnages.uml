@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_JfDfYFUgEeyCP9GD6vmXCQ" name="NewModel">
+  <packageImport xmi:id="_Eff_sFUhEeyCP9GD6vmXCQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_FLm3wFUhEeyCP9GD6vmXCQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_oE8OIFUhEeyCP9GD6vmXCQ" name="jeupersonnages">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Nr89oFUgEeyCP9GD6vmXCQ" name="map">
+      <packagedElement xmi:type="uml:Class" xmi:id="_PSHDIFUgEeyCP9GD6vmXCQ" name="Base" visibility="public">
+        <ownedAttribute xmi:id="_0afD8FUgEeyCP9GD6vmXCQ" name="nomBase" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0afrAFUgEeyCP9GD6vmXCQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0afrAVUgEeyCP9GD6vmXCQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Na_7EFUhEeyCP9GD6vmXCQ" name="couleur" visibility="public" type="_RYm1kFUgEeyCP9GD6vmXCQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Na_7EVUhEeyCP9GD6vmXCQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Na_7ElUhEeyCP9GD6vmXCQ" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_5IcA0FUgEeyCP9GD6vmXCQ" name="getNomBase"/>
+        <ownedOperation xmi:id="_7WsoIFUgEeyCP9GD6vmXCQ" name="setNomBase"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_RYm1kFUgEeyCP9GD6vmXCQ" name="ECouleurBase" visibility="public">
+        <ownedLiteral xmi:id="_UyI9MFUgEeyCP9GD6vmXCQ" name="rouge">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_UyKyYFUgEeyCP9GD6vmXCQ"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_W2zjoFUgEeyCP9GD6vmXCQ" name="jaune">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_W2zjoVUgEeyCP9GD6vmXCQ" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_ak_soFUgEeyCP9GD6vmXCQ" name="bleu">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_alATsFUgEeyCP9GD6vmXCQ" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_b8bZoFUgEeyCP9GD6vmXCQ" name="vert">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_b8cAsFUgEeyCP9GD6vmXCQ" value="3"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Yq8lUFUhEeyCP9GD6vmXCQ" name=" " memberEnd="_Yq8lUVUhEeyCP9GD6vmXCQ _Yq8lVFUhEeyCP9GD6vmXCQ" navigableOwnedEnd="_Yq8lVFUhEeyCP9GD6vmXCQ">
+        <ownedEnd xmi:id="_Yq8lUVUhEeyCP9GD6vmXCQ" name=" " type="_PSHDIFUgEeyCP9GD6vmXCQ" association="_Yq8lUFUhEeyCP9GD6vmXCQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yq8lUlUhEeyCP9GD6vmXCQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yq8lU1UhEeyCP9GD6vmXCQ"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_Yq8lVFUhEeyCP9GD6vmXCQ" name="eCouleurBases" type="_RYm1kFUgEeyCP9GD6vmXCQ" association="_Yq8lUFUhEeyCP9GD6vmXCQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yq8lVVUhEeyCP9GD6vmXCQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yq8lVlUhEeyCP9GD6vmXCQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_uqrzEFUhEeyCP9GD6vmXCQ" name="elements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_yHLvIFUhEeyCP9GD6vmXCQ" name="ElementJeu" visibility="public" isAbstract="true"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
